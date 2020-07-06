@@ -1,0 +1,19 @@
+
+
+<%= form_for(@post) do |f| %>
+
+    <%= f.label :username %>
+    <%= f.collection_select :user_id, User.all , :id, :username %>
+
+    <%= f.label :post_title %>
+    <%= f.text_field :post_title %>
+
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+
+    <%= f.label :post_img_url %>
+    <%= f.text_field :post_img_url %>
+
+    <%= f.submit %>
+
+<% end %>

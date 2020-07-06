@@ -1,0 +1,19 @@
+<h1>Make a donation!</h1>
+
+<%= form_for(@donation) do |f| %>
+
+    <%= f.label :username %>
+    <%= f.collection_select :user_id, @users , :id, :username %>
+
+    <%= f.label :pet %>
+    <%= f.collection_select :pet_id, @pets , :id, :name %>
+
+    <%= f.label :donation_amount %>
+    <%= f.number_field :donation_amount %>
+
+    <%= f.label :date %>
+    <%= f.date_field :date %>
+    
+    <%= f.submit %>
+
+<% end %>

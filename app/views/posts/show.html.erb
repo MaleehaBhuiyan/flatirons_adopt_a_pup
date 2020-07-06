@@ -1,0 +1,18 @@
+
+<h1><%= @post.post_title %></h1>
+<h3><%=  @post.user.username %></h3><br/>
+
+<p><img src= <%= "#{@post.post_img_url}" %> alt="Alt Picture" width="350" ></p>
+<p><%= @post.description %></p>
+
+<p><%= link_to "Back", posts_path %></p>
+
+<p><%= link_to "Edit", edit_post_path %></p>
+
+
+<%# 
+        * link_to username 
+        * like button 
+        * comment section 
+        
+        %>
