@@ -1,6 +1,9 @@
 <h1>Welcome <%= @user.name %></h1>
 
-<p><img src= <%= "#{@user.user_img_url}" %> alt="Alt Picture" width="350" ></p>
+<% if @user.avatar.attached? %>
+    <image src="<%=(url_for(@user.avatar))%>">
+<%end%>
+
 
 <p><%= link_to "Edit Account", edit_user_path %></p>
 

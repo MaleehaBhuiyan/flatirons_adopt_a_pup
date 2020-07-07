@@ -2,6 +2,7 @@ class User < ApplicationRecord
     has_many :posts 
     has_many :donations 
     has_many :pets
+    has_one_attached :avatar
 
     validates :username, :email, uniqueness: true
     validates :password, length: {in: 8..12}
