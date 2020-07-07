@@ -3,7 +3,7 @@
 
 <p><% @posts.each do |post| %></p>
 
-    <h3><%= link_to post.post_title, posts_path(post) %></h3>
+    <h3><%= link_to post.post_title, post_path(post) %></h3>
 
     <p><img src= <%= "#{post.post_img_url}" %> alt="Alt Picture" width="350" ></p></br>
 

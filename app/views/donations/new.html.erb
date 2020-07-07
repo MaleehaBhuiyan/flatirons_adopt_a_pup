@@ -1,3 +1,12 @@
+<div class='error'>
+  <% if flash[:my_errors] %>
+    <% flash[:my_errors].each do |error| %>
+      <p><%= error %></p>
+    <% end %>
+  <% end %>
+</div>
+
+
 <h1>Make a donation!</h1>
 
 <%= form_for(@donation) do |f| %>
