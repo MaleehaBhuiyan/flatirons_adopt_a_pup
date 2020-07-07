@@ -1,20 +1,29 @@
+  <% if flash[:my_errors] %>
+    <% flash[:my_errors].each do |error| %>
+      <p><%= error %></p>
+    <% end %>
+  <% end %>
+</div>
+
+
+
 <%= form_for(@user) do |f| %>
 
     <%= f.label :name %>
     <%= f.text_field :name %>
-
+    <br>
     <%= f.label :username %>
     <%= f.text_field :username %>
-
+    <br>
     <%= f.label :password %>
     <%= f.text_field :password %>
-
+     <br>
     <%= f.label :email %>
     <%= f.text_field :email %>
-
+     <br>
     <%= f.label :profile_pic %>
     <%= f.text_field :user_img_url%>
-
+     <br>
 
     <%= f.submit %>
 
