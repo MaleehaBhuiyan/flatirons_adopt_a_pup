@@ -1,0 +1,19 @@
+<div class='error'>
+  <% if flash[:my_errors] %>
+    <% flash[:my_errors].each do |error| %>
+      <p><%= error %></p>
+    <% end %>
+  <% end %>
+</div>
+
+
+<h1>Adopt a Pet</h1>
+
+<%= form_for(@pet) do |f| %>
+
+    <%= f.label :username %>
+    <%= f.collection_select :user_id, @users , :id, :username %>
+
+    <%= f.submit "Adopt Me"%>
+
+<% end %>

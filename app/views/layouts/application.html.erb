@@ -9,8 +9,17 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-
-    <%= image_tag("logos/logo.png", width: '300px' ) %>
+  
+  <div>
+   
+    <%= image_tag("logos/logo.png", width: '200px' ) %>
+    <%= link_to "Home", root_path%>
+    <%= link_to "Make a Donation", new_donation_path%>
+    <%= link_to "Sign Up", new_user_path %>
+    <%= link_to "Look At All Our Pets!", pets_path %>
+    <%= link_to "Newsfeed", posts_path %>
+   
+  </div>
     <%= yield %>
   </body>
 </html>

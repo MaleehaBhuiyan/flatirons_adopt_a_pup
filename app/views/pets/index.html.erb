@@ -1,5 +1,12 @@
 <h1>All of our Wonderful Pups</h1>
 
+
 <% @pets.each do |pet| %>
-    <p><%= link_to pet.name, pet_path(pet)%></p>
+
+    <p style="text-align:center"><%= link_to pet.name, pet_path(pet)%></p>   
+    <p style="text-align:center"><img src= <%= "#{pet.pet_img_url}" %> alt="Alt Picture" width="350" ></p><br/>
+  
+
 <% end %>
+
+ 
