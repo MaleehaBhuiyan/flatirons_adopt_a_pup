@@ -3,6 +3,8 @@ class User < ApplicationRecord
     has_many :donations 
     has_many :pets
     has_one_attached :avatar
+    # has_one_attached :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+
 
     validates :username, :email, uniqueness: true
     validates :password, length: {in: 8..12}
