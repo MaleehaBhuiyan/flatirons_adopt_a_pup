@@ -9,17 +9,31 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-  
-  <div>
-   
-    <%= image_tag("logos/logo.png", width: '200px' ) %>
-    <%= link_to "Home", root_path%>
-    <%= link_to "Make a Donation", new_donation_path%>
-    <%= link_to "Sign Up", new_user_path %>
-    <%= link_to "Look At All Our Pets!", pets_path %>
-    <%= link_to "Newsfeed", posts_path %>
-   
-  </div>
-    <%= yield %>
+
+    <header class='clearfix'>
+      <div class="left-nav">
+        
+          <h3><%= image_tag("logos/logo.png", width: '150px' ) %>
+              <%= link_to "🐶Home", root_path%>
+              <%= link_to "🐶Make a Donation", new_donation_path%>
+              <%= link_to "🐶Sign Up", new_user_path %>
+              <%= link_to "🐶Look At All Our Pets!", pets_path %>
+              <%= link_to "🐶Newsfeed🐶", posts_path %></h3>
+
+      </div>
+      
+    </header>
+
+    <div class='content'>
+       <%= yield %>
+    </div>
+
   </body>
 </html>
+
+
+
+
+
+
+
