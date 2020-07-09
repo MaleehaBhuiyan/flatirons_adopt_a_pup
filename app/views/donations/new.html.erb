@@ -11,18 +11,19 @@
 
 <%= form_for(@donation) do |f| %>
 
-    <%= f.label :username %>
-    <%= f.collection_select :user_id, @users , :id, :username %>
+    <p style="text-align:center"><%= f.label :username %>
+    <%= f.collection_select :user_id, @users , :id, :username %></p>
 
-    <%= f.label :pet %>
-    <%= f.collection_select :pet_id, @pets , :id, :name %>
+    <p style="text-align:center"><%= f.label :pet %>
+    <%= f.collection_select :pet_id, @pets , :id, :name %></p>
 
-    <%= f.label :donation_amount %>
-    <%= f.number_field :donation_amount %>
+    <p style="text-align:center"><%= f.label :donation_amount %>
+    <%= f.number_field :donation_amount %></p>
 
-    <%= f.label :date %>
-    <%= f.date_field :date %>
+    <p style="text-align:center"><%= f.label :date %>
+    <%= f.date_field :date %></p>
     
-    <%= f.submit %>
+    <p style="text-align:center"><%= f.submit %></p>
 
 <% end %>
+

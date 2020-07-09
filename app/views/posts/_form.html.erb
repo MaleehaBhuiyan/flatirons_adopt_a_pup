@@ -9,18 +9,18 @@
 
 <%= form_for(@post) do |f| %>
 
-    <%= f.label :username %>
-    <%= f.collection_select :user_id, User.all , :id, :username %>
+    <p style="text-align:center"><%= f.label :username %>
+    <%= f.collection_select :user_id, User.all , :id, :username %></p>
 
-    <%= f.label :post_title %>
-    <%= f.text_field :post_title %>
+    <p style="text-align:center"><%= f.label :post_title %>
+    <%= f.text_field :post_title %></p>
 
-    <%= f.label :description %>
-    <%= f.text_field :description %>
+    <p style="text-align:center"><%= f.label :description %>
+    <%= f.text_field :description %></p>
 
-    <%= f.label :post_img_url %>
-    <%= f.text_field :post_img_url %>
+    <p style="text-align:center"><%= f.label :post_img_url %>
+    <%= f.text_field :post_img_url %></p>
 
-    <%= f.submit %>
+    <p style="text-align:center"><%= f.submit %></p>
 
 <% end %>

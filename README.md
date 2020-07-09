@@ -26,3 +26,8 @@ Things you may want to cover:
 TEST 
 
 
+<p><%= link_to "Adopt A Pet", pets_path %></p>
+
+<p><%= link_to "Edit Account", edit_user_path %></p>
+
+<p><%= link_to "Make a Donation", new_donation_path %></p>

@@ -11,9 +11,9 @@
 
 <%= form_for(@pet) do |f| %>
 
-    <%= f.label :username %>
-    <%= f.collection_select :user_id, @users , :id, :username %>
+    <p style="text-align:center"><%= f.label :username %>
+    <%= f.collection_select :user_id, @users , :id, :username %></p>
 
-    <%= f.submit "Adopt Me"%>
+    <p style="text-align:center"><%= f.submit "Adopt Me"%></p>
 
 <% end %>

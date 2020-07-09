@@ -1,13 +1,15 @@
 <h1>Welcome <%= @user.name %></h1>
 
+<user_header class='user'>
+  <div class="user-nav">
+    <ul>
+      <li><%= link_to "Adopt A Pet", pets_path %></li>
+      <li><%= link_to "Edit Account", edit_user_path %></li>
+      <li><%= link_to "Make a Donation", new_donation_path %></li>
+    </ul>
+  </div>
+</user_header>
+
 <% if @user.avatar.attached? %>
     <image src="<%=(url_for(@user.avatar))%>">
 <%end%>
-
-
-<p><%= link_to "Adopt A Pet", pets_path %></p>
-
-<p><%= link_to "Edit Account", edit_user_path %></p>
-
-<p><%= link_to "Make a Donation", new_donation_path %></p>
-
