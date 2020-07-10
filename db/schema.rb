@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2020_07_07_201624) do
   create_table "donations", force: :cascade do |t|
     t.integer "user_id"
     t.integer "pet_id"
-    t.float "donation_amount"
+    t.integer "donation_amount"
     t.datetime "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

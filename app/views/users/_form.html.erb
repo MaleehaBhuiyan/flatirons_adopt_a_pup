@@ -9,23 +9,23 @@
 
 <%= form_for(@user) do |f| %>
 
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <br>
-    <%= f.label :username %>
-    <%= f.text_field :username %>
-    <br>
-    <%= f.label :password %>
-    <%= f.text_field :password %>
-    <br>
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-    <br>
-    <%= f.label :profile_pic %>
-    <%= f.file_field :avatar%>
-    <br>
+    <p style="text-align:center"><%= f.label :name %>
+    <%= f.text_field :name %></p>
+    
+    <p style="text-align:center"><%= f.label :username %>
+    <%= f.text_field :username %></p>
+   
+    <p style="text-align:center"><%= f.label :password %>
+    <%= f.text_field :password %></p>
+  
+    <p style="text-align:center"><%= f.label :email %>
+    <%= f.text_field :email %></p>
+  
+    <p style="text-align:center"><%= f.label :profile_pic %>
+    <%= f.file_field :avatar%></p>
+  
 
-    <%= f.submit %>
+    <p style="text-align:center"><%= f.submit %></p>
 
 <% end %>
 

@@ -1,12 +1,5 @@
 <h1> Thank You for Your Donation </h1>
+<h6 style="text-align:center">You donated <%="$#{@donation.donation_amount}"%> on <%= "#{@donation.date}" %>. </h6>
+<p style="text-align:center"><%= [image_tag("cartoon/cartoon_dog_2.png", width: '500px' ),image_tag("cartoon/cartoon_dog_3.png", width: '500px' ),image_tag("cartoon/cartoon_dog_4.png", width: '500px' )].sample %></p>
+<p style="text-align:center"><%= link_to "Back", user_path(@donation.user) %></p>
 
-<p> You donated <%= "$#{@donation.donation_amount}"%> on <%= "#{@donation.date}" %>. </p>
-
-<p><img src= <%= ["https://www.furrypartners.com/images/P/35880.jpg", 
-                  "https://images.unsplash.com/photo-1554830072-52d78d0d4c18?ixlib=rb-1.2.1&w=1000&q=80",
-                  "https://images-na.ssl-images-amazon.com/images/I/61Blsjf34oL._AC_SX679_.jpg", 
-                  "https://foothillsanimalshelter.org/wp-content/uploads/2015/12/Thank-you-puppy.png", 
-                  "https://lh3.googleusercontent.com/proxy/DHboWfaAJyFb9awz1F0rGyjxmPy1QoIC20ND_U4YWqzFKRiVCvluUBzZPI7QqK65OoJihL1ii05C-i1-yOqpS5v2tQiIh-FhY4eeUfpCOOhESUs63nxEgxnmghw-pWx7pX56rHd5YFf4x2_1BWZuxU6fwGCs5fCO1JU"].sample %> alt="Alt Picture" width="350" ></p>
-
-
-<p><%= link_to "Back", user_path(@donation.user) %></p>

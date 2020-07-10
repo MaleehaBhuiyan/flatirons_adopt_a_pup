@@ -23,6 +23,21 @@ body {
       text-align: center; 
   }
 
+//h6 styling 
+h6{
+  font-size:20px;
+  font-weight: bold;
+  font-family: Chalkduster;
+  color: navy;
+  text-transform: uppercase; 
+}
+
+h7{
+  font-size:15px;
+  font-family: Chalkduster;
+  color: navy;
+}
+
 //p tag styling 
 p{
   ul {
@@ -81,3 +96,23 @@ input:focus, textarea:focus {
     -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
     }
 
+.border { 
+  width:300px;
+  height:300px;
+  border-width: 25px; 
+  border-color: lavender; 
+  border-style: outset;}
+
+
+.user {
+  width:50%;
+  margin:0;
+  padding:0;
+  float:right;}
+
+
+  .cartoon {
+    width:55%;
+    margin:0;
+    padding:0;
+    float:right;}

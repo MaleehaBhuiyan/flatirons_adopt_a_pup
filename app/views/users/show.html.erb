@@ -1,19 +1,29 @@
-<h1>Welcome <%= @user.name %></h1>
+<h1>Welcome <%= @user.name %></h1></br></br>
 
-<% if @user.avatar.attached? %>
-    <image src="<%=(url_for(@user.avatar))%>">
-<%end%>
 
 <user_header class='user'>
   <div class="user-nav">
+  <p class="cartoon"><%= image_tag("cartoon/cartoon_dog.png", width: '500px' ) %></p>
+
     <ul>
-      <li><%= link_to "Adopt A Pet", pets_path %></li>
-      <li><%= link_to "Edit Account", edit_user_path %></li>
-      <li><%= link_to "Make a Donation", new_donation_path %></li>
-      <li><%= link_to "Create a New Post", new_post_path %></li>
-      <li><%= link_to 'Delete', user_path(@user), method: :delete %></li>
+      <li><p><%= link_to "Adopt A Pet", pets_path %></p></li>
+      <li><p><%= link_to "Edit Account", edit_user_path %></p></li>
+      <li><p><%= link_to "Make a Donation", new_donation_path %></p></li>
+      <li><p><%= link_to "Create a New Post", new_post_path %></p></li>
+      <li><p><%= link_to 'Delete', user_path(@user), method: :delete %></p></li>
     </ul>
+
   </div>
 </user_header>
+
+<p class="border" class="img"><%= image_tag(@user.avatar, size: '300x300') %> </p>
+
+
+
+
+
+
+
+
 
 
