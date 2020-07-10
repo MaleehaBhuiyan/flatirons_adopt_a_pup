@@ -26,6 +26,16 @@
   </ul>
 <% end %>
 
+<h6>Your Posts</h6>
+
+<% @user.posts.each do |post| %>
+  <ul>
+  <li><p><%= link_to post.post_title, post_path(post)%></p>
+  <p><img src= <%= "#{post.post_img_url}" %> alt="Alt Picture" width="100" ></p></li>
+  </ul>
+<% end %>
+
+
 
 
 
