@@ -18,22 +18,38 @@
 
 <p class="border" class="img"><%= image_tag(@user.avatar, size: '300x300') %> </p><br/>
 
-<h6>Your Generous Donations</h6>
 
-<% @user.donations.each do |donation| %>
-  <ul>
-  <li><p><%= link_to "A Donation 💕", donation_path(donation)%></p></li>
-  </ul>
-<% end %>
-
+<div class="prettyposts">
 <h6>Your Posts</h6>
-
 <% @user.posts.each do |post| %>
   <ul>
   <li><p><%= link_to post.post_title, post_path(post)%></p>
   <p><img src= <%= "#{post.post_img_url}" %> alt="Alt Picture" width="100" ></p></li>
   </ul>
-<% end %>
+<% end %></div>
+
+<div class="prettydonations">
+<h6>Your Generous Donations</h6>
+<% @user.donations.each do |donation| %>
+  <ul>
+  <li><p><%= link_to "A Donation 💕", donation_path(donation)%></p></li>
+  </ul>
+<% end %></div>
+
+<h6>Your Pupperinos</h6>
+<% @user.pets.each do |pet| %>
+  <ul>
+  <li><p><%= link_to pet.name, pet_path(pet)%></p>
+  <p><img src= <%= "#{pet.pet_img_url}" %> alt="Alt Picture" width="200" ></p></li>
+  </ul>
+<% end %></div>
+
+
+
+
+
+
+
 
 
 

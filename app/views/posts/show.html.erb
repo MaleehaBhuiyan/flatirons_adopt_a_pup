@@ -10,8 +10,9 @@
 <br>
 <br>
 
-<p><%= link_to "Back", posts_path %></p>
+<p><%= link_to "Back", user_path(@post) %></p>
 
 <p><%= link_to "Edit", edit_post_path %></p>
 
 <p><%= link_to 'Delete Post', post_path(@post), method: :delete %></p>
+
